@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    color: black;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(27deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+}
+
+.calculator {
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    width: 30%;
+    height: 80%;
+}
+
+.result {
+    
+    overflow-x: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    width: 100%;
+    height: 20%;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    font-size: 50px;
+}
+
+.result:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.buttons {
+    display: grid;                     
+    grid-template-columns: repeat(4, 1fr);    
+    gap: 1%;               
+    width: 100%;
+    height: 70%;
+    padding: 1%;
+}
+
+/* .button_zero {
+    grid-column: span 2;
+    max-height: 90%;
+    max-width: 95%;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 50px;
+}
+
+.button_zero:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.button_equals {
+    max-height: 90%;
+    max-width: 90%;
+    border-radius: 10px;
+    background: rgba(230, 220, 85, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 50px;
+}
+
+.button_equals:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+} */
+
+.button {
+    max-height: 90%;
+    max-width: 90%;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 50px;
+}
+
+
+.button:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
