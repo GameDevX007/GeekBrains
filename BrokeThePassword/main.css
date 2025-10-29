@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #132A13;
+background: linear-gradient(199deg, rgba(19, 42, 19, 1) 0%, rgba(49, 87, 44, 1) 100%);
+  color: var(--fifeth);
+  width: 100vw;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+:root {
+  --first: #132a13;
+  --second: #31572c;
+  --third: #4f772d;
+  --fourth: #90a955;
+  --fifeth: #ecf39e;
+}
+
+.background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.upper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  margin-top: 10px;
+}
+
+.upper h1 {
+  font-size: 40px;
+  font-family: "Bitcount Grid Single", system-ui;
+  font-weight: 400;
+  color: var(--fifeth);
+}
+
+.upper p {
+  color: var(--fourth);
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+  height: 60%;
+  background: #132A13;
+  background: linear-gradient(40deg, rgba(19, 42, 19, 1) 0%, rgba(49, 87, 44, 1) 100%);
+  border-radius: 15px;
+  border: 2px solid var(--fifeth);
+}
+
+.body h1 {
+  /* position: relative;
+  bottom: 20px; */
+  text-align: center;
+  color: var(--fifeth);
+  height: 10%;
+  width: 100%;
+}
+
+.body .login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.body .login p {
+  color: var(--fourth);
+  font-size: 20px;
+  text-align: start;
+  width: 50%;
+}
+
+.body .login .login_input {
+  background-color: var(--first);
+  border: 1px solid var(--fourth);
+  color: var(--fifeth);
+  text-align: center;
+  font-size: 20px;
+  border-radius: 5px;
+  width: 50%;
+  height: 25%;
+  font-family: "Bitcount Grid Single", system-ui;
+  cursor: crosshair;
+}
+
+.body .password {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.body .password p {
+  color: var(--fourth);
+  font-size: 20px;
+  text-align: start;
+  width: 50%;
+}
+
+.body .password .password_input {
+  background-color: var(--first);
+  border: 1px solid var(--fourth);
+  color: var(--fifeth);
+  text-align: center;
+  font-size: 20px;
+  border-radius: 5px;
+  width: 55%;
+  height: 35%;
+  font-family: "Bitcount Grid Single", system-ui;
+  cursor: crosshair;
+}
+
+.check_btn {
+  background-color: var(--first);
+  width: 50%;
+  height: 7%;
+  border-radius: 5px;
+  border: 1px solid var(--fourth);
+  color: var(--fifeth);
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.check_btn:hover {
+    font-size: 15px;
+}
+
+.footer {
+  height: 10%;
+  width: 50%;
+  
+}
+
+.footer nav {
+  border-radius: 15px 15px 0 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #132A13;
+  background: linear-gradient(40deg, rgba(19, 42, 19, 1) 0%, rgba(49, 87, 44, 1) 100%);
+  border: 2px solid var(--fifeth);
+  height: 100%;
+  color: var(--fifeth);
+  gap: 20px;
+  
+}
+
+.footer nav a {
+  color: var(--fifeth);
+  font-size: 20px;
+  text-decoration: none;
+  font-size: 15px;
+  transition: all 0.1s ease;
+}
+
+.footer nav .active {
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.footer nav a:hover {
+    transform: translateY(-3px);
+}
+
+@media (max-width: 1683px) {
+  .body {
+    width: 40%;
+  }
+
+  .footer {
+    width: 40%;
+  }
+  
+}
+
+@media (max-width: 920px) {
+  .body {
+    width: 60%;
+  }
+
+  .footer {
+    width: 60%;
+  }
+}
+
+@media (max-width: 630px) {
+  .body {
+    width: 90%;
+  }
+
+  .footer {
+    width: 90%;
+  }
+}
