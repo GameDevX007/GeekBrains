@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Minecraft Case</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="b1">
+        <div class="inventory-title">ИНВЕНТАРЬ</div>
+        <div class="inventory" id="inventory">
+          <div class="slot"></div>
+          <div class="slot"></div>
+          <div class="slot"></div>
+          <div class="slot"></div>
+          <div class="slot"></div>
+          <div class="slot"></div>
+          <div class="slot"></div>
+          <div class="slot"></div>
+          <div class="slot"></div>
+        </div>
+      </div>
+
+      <div class="b2">
+        <div class="attempts" id="attempts-display">ПОПЫТКИ: 5</div>
+
+        <div class="roulette-container">
+          <div class="marker"></div>
+          <div class="tape" id="tape"></div>
+        </div>
+
+        <button id="spin-button" onclick="spin()">ОТКРЫТЬ КЕЙС</button>
+      </div>
+    </div>
+
+    <script src="function.js"></script>
+  </body>
+</html>
