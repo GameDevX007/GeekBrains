@@ -1,0 +1,603 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* font-family: "Inter", sans-serif; */
+/* font-family: "BBH Sans Bogle", sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+:root {
+    --first_color: #22223b;
+    --second_color: #4a4e69;
+    --third_color: #9a8c98;
+    --fourth_color: #c9ada7;
+    --fifeth_color: #f2e9e4;
+}
+
+html {
+    overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    width: 100vw;
+    height: 300vh;
+    background-color: var(--first_color);
+    color: var(--fourth_color);
+    overflow-x: hidden;
+}
+
+.upper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    gap: 40px;
+}
+
+.upper .nav_btn {
+    position: relative;
+    font-size: 15px;
+    color: var(--fourth_color);
+    text-decoration: none;
+    transition: all 0.1s ease;
+}
+
+.upper .nav_btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px; 
+  width: 0%;
+  height: 2px;
+  background-color: var(--fourth_color);
+  transition: width 0.4s ease;
+}
+
+.upper .nav_btn:hover::after {
+  width: 100%;
+}
+
+.upper .nav_btn:hover {
+    color: var(--fifeth_color);
+    text-decoration: none;
+}
+
+.upper .brand {
+    position: relative;
+    left: -100px;
+    font-size: 25px;
+    color: var(--fifeth_color);
+    text-decoration: none;
+}
+
+.upper .brand:hover {
+    color: var(--fourth_color);
+}
+
+.upper .brand::after {
+    content: "";
+  position: absolute;
+  left: -50px;
+  top: 12px; 
+  width: 0%;
+  height: 2px;
+  background-color: var(--fourth_color);
+  transition: width 0.4s ease;
+}
+
+.upper .brand:hover::after{
+    width: 100%;
+}
+
+/* About me */
+
+.about_me{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+    height: 80vh;
+    width: 100%;
+}
+
+.about_me h3{
+    color: var(--fourth_color);
+}
+
+.about_me h1 {
+    font-family: "BBH Sans Bogle", sans-serif;
+    font-weight: 100;
+    letter-spacing: 3px;
+    color: var(--fifeth_color);
+}
+
+.about_me h2{
+    position: relative;
+    font-size: 23px;
+}
+
+.about_me h2::after {
+    content: "";
+  position: absolute;
+  left: 180px;
+  top: 15px;
+  width: 50px;
+  height: 2px;
+  background-color: var(--fourth_color);
+  transition: width 0.4s ease;
+    
+}
+
+.about_me h2::before {
+    content: "";
+  position: absolute;
+  left: -60px;
+  top: 15px;
+  width: 50px;
+  height: 2px;
+  background-color: var(--fourth_color);
+  transition: width 0.4s ease;
+}
+
+.about_me p {
+    width: 50%;
+    text-align: center;
+    color: var(--third_color);
+}
+
+.about_me .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    width: 50%;
+    height: 10%;
+    gap: 20px;
+}
+
+.about_me .card {
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    border-radius: 50%;
+    height: 100%;
+    border: 3px solid var(--fourth_color);
+    transition: all 0.1s ease-in;
+}
+
+.about_me .cards:has(.card:hover) .card:not(:hover) {
+  filter: blur(3px);
+  opacity: 0.5;
+}
+
+.about_me .card:hover {
+    transform: scale(1.03);
+}
+
+
+.about_me .card img {
+    filter: brightness(0) saturate(100%) invert(89%) sepia(12%) saturate(268%) hue-rotate(321deg) brightness(93%) contrast(89%);
+    width: 100%;
+}
+
+.cards .football img {
+    width: 90%;
+}
+
+.cards .game img {
+    width: 90%;
+}
+
+.point_light {z-index: 1000;
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    pointer-events: none;
+    background: radial-gradient(circle, var(--fourth_color), transparent 80%);
+    transform: translate(-50%, -50%);
+    mix-blend-mode: overlay; 
+    filter: blur(50px);
+}
+
+
+/* My skills */
+
+.my_skills {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15%;
+    width: 100%;
+    height: 30vh;
+    transition: all 0.3 ease-in;
+}
+
+.my_skills .body-1 {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.my_skills .body-1 h1 {
+    position: relative;
+    text-align: end;
+    width: 80%;
+    font-size: 30px;
+    color: var(--fifeth_color);
+    font-family: "BBH Sans Bogle", sans-serif;
+    font-weight: 100;
+    letter-spacing: 5px;
+}
+
+.my_skills .body-1 h1::before {
+    content: "";
+  position: absolute;
+  left: 45px;
+  top: 18px;
+  width: 100px;
+  height: 2px;
+  background-color: var(--fifeth_color);
+}
+
+.my_skills .body-1 h3 {
+    width: 80%;
+    text-align: end;
+    color: var(--third_color);
+}
+
+.my_skills .body-1 h3 span {
+    font-size: 23px;
+    color: var(--fourth_color);
+}
+
+.my_skills .body-2 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.my_skills .body-2 .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: 50%;
+
+    
+}
+
+.my_skills .body-2 .card {
+    filter: brightness(0) saturate(100%) invert(89%) sepia(12%) saturate(268%) hue-rotate(321deg) brightness(93%) contrast(89%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+    user-select: none;
+}
+
+.my_skills .card:hover {
+    transform: scale(1.1);
+}
+
+.my_skills :has(.card:hover) .card:not(:hover) {
+  opacity: 0.5;
+  scale: 0.95;
+  filter: brightness(0) saturate(100%) invert(89%) sepia(12%) saturate(268%) hue-rotate(321deg) brightness(93%) contrast(89%) blur(3px);
+  transition: all 0.3s ease;
+}
+
+
+
+.my_skills .body-2 .card img {
+    width: 100%;
+}
+
+.my_skills .body-2 .html img {
+    width: 90%;
+}
+
+.my_skills .body-2 .sql img {
+    width: 75%;
+}
+
+.my_skills .body-2 .js img {
+    width: 80%;
+}
+
+.my_skills .body-2 .python img {
+    width: 75%;
+}
+
+.my_skills .body-2 .css {
+    position: relative;
+}
+
+.my_skills .body-2 .css img {
+    top: 15px;
+    position: absolute;
+    width: 80%;
+}
+
+/* My peojects */
+
+.my_projects {
+    width: 100vw;
+    height: 100vh;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.my_projects h2 {
+    width: 80%;
+    font-family: "BBH Sans Bogle", sans-serif;
+    font-weight: 100;
+    letter-spacing: 3px;
+    font-size: 30px;
+    color: var(--fifeth_color);
+}
+
+.my_projects .cards {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.my_projects .card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30%;
+    width: 100%;
+    position: relative;
+    
+}
+
+.my_projects .card .body-1 {
+    background-color: var(--first_color);
+    border: 3px solid var(--fourth_color);
+    border-radius: 10px;
+    position: absolute;
+    left: -20px;
+    background-color: #4a4e69;
+    width: 40%;
+    height: 150%;
+    z-index: 5;
+    pointer-events: none;
+}
+
+.my_projects .card .body-1 img {
+    width: 100%;
+    height: 100%;
+    border-radius:10px;
+}
+
+.my_projects .card .body-2 {
+    background-color: var(--first_color);
+    z-index: 3;
+    position: absolute;
+    left: 220px;
+    border: 3px solid var(--fourth_color);
+    border-radius: 10px;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.my_projects .card .body-2 p {
+    text-align: center;
+    width: 80%;
+    color: var(--third_color);
+}
+
+.my_projects .card .body-2 .site_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 50%;
+    height: 20%;
+    background-color: var(--fourth_color);
+    text-decoration: none;
+    color: var(--first_color);
+    transition: all 0.1s ease;
+    z-index: 1000;
+    position: relative;
+    cursor: pointer;
+}
+
+.my_projects .card .body-2 .site_btn:hover {
+    gap: 15px;
+}
+
+.my_projects .card .body-2 .site_btn img {
+    width: 30px; 
+}
+
+/* Contacts */
+
+.contacts {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    background-color:#161625;
+    height: 30vh;
+    width: 100%;
+}
+
+.contacts h1 {
+    font-family: "BBH Sans Bogle", sans-serif;
+    color:var(--fifeth_color);
+    font-weight: 100;
+    letter-spacing: 5px;
+    font-size: 40px;
+}
+
+.contacts .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 80%;
+}
+
+.contacts .row a{
+    position: relative;
+    text-decoration: none;
+    color: var(--third_color);
+    font-size: 20px;
+}
+
+.contacts .row a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px; 
+  width: 0%;
+  height: 2px;
+  background-color: var(--fourth_color);
+  transition: width 0.4s ease;
+  z-index: 500;
+}
+
+.contacts .row a:hover::after{
+    width: 100%;
+}
+
+@media (max-width: 2000px) {
+    .upper {
+        width: 100%;
+    }
+
+    .upper .brand {
+        position: relative;
+        left: -560px;
+    }
+
+    .about_me {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .about_me h1 {
+        font-size: 50px;
+    }
+
+    .about_me h3 {
+        font-size: 25px;
+    }
+
+    .about_me h2 {
+        font-size: 30px;
+    }
+
+    .about_me h2::after {
+        left: 220px;
+        top: 20px
+    }
+
+    .about_me h2::before {
+        top: 17px;
+        height: 3px;
+    }
+
+    .about_me p {
+        font-size: 20px;
+        width: 30%;
+    }
+
+    .about_me .cards {
+        width: 27%;
+    }
+
+    .my_skills {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        width: 100%;
+    }
+
+    .my_skills .body-1 {
+        width: 40%;
+    }
+
+    .my_skills .body-1 h1::before {
+        left: 270px;
+    }
+
+    .my_skills .body-1 h3 {
+        width: 80%;
+        font-size: 20px;
+    }
+
+    .my_skills .body-1 h3 span{
+        font-size: 30px;
+    }
+
+    .my_skills .body-2{
+        width: 30%;
+        margin-right: 200px;
+    }
+
+    .my_skills .body-2 .card {
+        width: 20%;
+        
+    }
+
+    .my_projects h2 {
+        text-align: center;
+    }
+
+    .my_projects .cards {
+        margin-top: 100px;
+    }
+
+    .my_projects .card {
+        width: 50%;
+    } 
+}
+
+
+
+
+
+
+/*  
+
+    1 997 000  <- skidka 90 989 00 25
+
+*/
