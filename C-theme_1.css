@@ -125,7 +125,7 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 3000px) {
     .calculator {
         height: 50%;
         width: 70%; /* Сайдбар растягивается на всю ширину */
@@ -143,3 +143,4 @@ body {
         float: none;
     }
 }
+
