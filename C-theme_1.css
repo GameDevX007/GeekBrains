@@ -125,3 +125,21 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
+@media (max-width: 1300px) {
+    .calculator {
+        height: 50%;
+        width: 70%; /* Сайдбар растягивается на всю ширину */
+        float: none;
+    }
+
+    .buttons {
+        font-size: 100px;
+    }
+}
+
+@media (max-width: 600px) {
+    .calculator {
+        width: 70%; /* Сайдбар растягивается на всю ширину */
+        float: none;
+    }
+}
